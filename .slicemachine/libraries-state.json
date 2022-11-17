@@ -74,6 +74,79 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "info_section": {
+        "library": "slices",
+        "id": "info_section",
+        "name": "InfoSection",
+        "description": "InfoSection",
+        "model": {
+          "id": "info_section",
+          "type": "SharedSlice",
+          "name": "InfoSection",
+          "description": "InfoSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "InfoSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is an information section",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Garage",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Lorem aute officia enim culpa non nostrud pariatur aliquip amet voluptate. Duis irure et officia sit ullamco id commodo fugiat sit aute eiusmod. Mollit labore velit qui voluptate esse nulla aliqua id voluptate id officia.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "info_section"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }

@@ -35,7 +35,7 @@ interface PageDocumentData {
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = AboutTextSlice;
+type PageDocumentDataSlicesSlice = AboutTextSlice | InfoSectionSlice;
 /**
  * Page document from Prismic
  *
@@ -96,11 +96,60 @@ type AboutTextSliceVariation = AboutTextSliceDefault;
  *
  */
 export type AboutTextSlice = prismicT.SharedSlice<"about_text", AboutTextSliceVariation>;
+/**
+ * Primary content in InfoSection → Primary
+ *
+ */
+interface InfoSectionSliceDefaultPrimary {
+    /**
+     * Title field in *InfoSection → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is an information section
+     * - **API ID Path**: info_section.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *InfoSection → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: info_section.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for InfoSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `InfoSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type InfoSectionSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<InfoSectionSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *InfoSection*
+ *
+ */
+type InfoSectionSliceVariation = InfoSectionSliceDefault;
+/**
+ * InfoSection Shared Slice
+ *
+ * - **API ID**: `info_section`
+ * - **Description**: `InfoSection`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type InfoSectionSlice = prismicT.SharedSlice<"info_section", InfoSectionSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, AllDocumentTypes, AboutTextSliceDefaultPrimary, AboutTextSliceDefault, AboutTextSliceVariation, AboutTextSlice };
+        export type { PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, AllDocumentTypes, AboutTextSliceDefaultPrimary, AboutTextSliceDefault, AboutTextSliceVariation, AboutTextSlice, InfoSectionSliceDefaultPrimary, InfoSectionSliceDefault, InfoSectionSliceVariation, InfoSectionSlice };
     }
 }

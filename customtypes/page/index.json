@@ -28,6 +28,9 @@
           "choices": {
             "about_text": {
               "type": "SharedSlice"
+            },
+            "info_section": {
+              "type": "SharedSlice"
             }
           }
         }

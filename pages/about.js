@@ -2,6 +2,7 @@
 import { SliceZone } from '@prismicio/react'
 import * as prismic from "@prismicio/client"
 import sm from "../sm.json"
+import prismicio from "../prismicio"
 import { createClient } from '../prismicio'
 import { components } from '../slices'
 
