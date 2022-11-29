@@ -1,0 +1,26 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Small",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Amet enim consequat et exercitation sint nulla est irure. Veniam ipsum id consequat voluptate commodo cillum eu. Anim aute commodo culpa minim aute velit exercitation occaecat veniam sit esse amet pariatur sint.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "another_slice"
+  }
+]

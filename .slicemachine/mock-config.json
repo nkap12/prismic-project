@@ -1,6 +1,9 @@
 {
   "_cts": {
-    "page": {}
+    "page": {},
+    "navbar": {},
+    "navigation": {},
+    "navigation_menu": {}
   },
   "slices": {
     "AboutText": {
@@ -22,6 +25,24 @@
       }
     },
     "InfoSection": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "AnotherSlice": {},
+    "NavigationItem": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "NavigationThing": {
       "default": {
         "primary": {
           "title": {

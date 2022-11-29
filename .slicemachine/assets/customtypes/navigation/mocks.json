@@ -1,0 +1,23 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "navigation",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "name": [
+      {
+        "type": "paragraph",
+        "text": "Sunt reprehenderit quis proident commodo duis aliqua ad sunt veniam ullamco velit ut laboris cupidatat. Reprehenderit esse id cupidatat. Velit enim consectetur aliquip est culpa excepteur anim incididunt sit laborum quis deserunt aliqua aliqua enim.",
+        "spans": []
+      }
+    ],
+    "slices": []
+  }
+}
